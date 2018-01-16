@@ -1,0 +1,4 @@
+-- | 
+
+module Bittrex.API where
+

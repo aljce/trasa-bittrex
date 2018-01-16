@@ -1,0 +1,4 @@
+-- | 
+
+module Bittrex.Types where
+
