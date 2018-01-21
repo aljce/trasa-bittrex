@@ -13,9 +13,15 @@ cabal-version:       >=1.10
 
 library
   exposed-modules:     Bittrex.API
+                     , Bittrex.Money
                      , Bittrex.Types
   build-depends:       base >=4.10 && <4.11
-                     , trasa == 0.3.*
+                     , text         == 1.2.*
+                     , vector       == 0.12.*
+                     , aeson        == 1.2.*
+                     , safe-money   == 0.3.*
+                     , http-client  == 0.5.*
+                     , trasa        == 0.3.*
                      , trasa-client == 0.3.*
   hs-source-dirs:      src
   default-language:    Haskell2010

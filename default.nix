@@ -10,6 +10,7 @@ let
   nixpkgs = trasa-platform.nixpkgs;
   overrides = trasa-platform.overrides.override {
     overrides = self: super: with nixpkgs.haskell.lib; {
+      store = dontCheck super.store;
       trasa-bittrex = self.callCabal2nix "trasa-bittrex" ./. {};
     };
   };
