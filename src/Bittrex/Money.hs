@@ -33,6 +33,7 @@ class Currency code where
     :: (Generic code, Rep code x ~ D1 m V1 x) => code -> Void
   empty code = case from code of
     !v -> error "Currency.empty: the impossible happened"
+
   identifier :: T.Text
   default identifier
     :: forall x d m p n v. (Generic code, KnownSymbol d, Rep code x ~ D1 ('MetaData d m p n) v x) => T.Text
